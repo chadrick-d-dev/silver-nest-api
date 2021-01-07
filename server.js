@@ -19,7 +19,7 @@ app.locals.residents = [
   {
     "id": "1",
     "name": "Doris",
-    "photo": "",
+    "photo": "https://erinwritesnow.files.wordpress.com/2017/01/cute-happy-older-lady.jpg",
     "age": "87",
     "height": "5'9\"",
     "weight": "145 lbs",
@@ -36,9 +36,9 @@ app.locals.residents = [
     "additonal notes": "I need help feeding my cat, Mittens. Please don't eat peanuts around me, I am terribly allergic."
   },
   {
-    "id": "",
-    "name": "",
-    "photo": "",
+    "id": "2",
+    "name": "Ralph",
+    "photo": "https://images.pond5.com/closeup-happy-old-black-man-footage-011131899_iconl.jpeg",
     "age": "",
     "weight": "",
     "height": "",
