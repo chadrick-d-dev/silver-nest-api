@@ -1,9 +1,9 @@
 
 exports.seed = function(knex) {
 
-  return knex('residents').del()
+  return knex('residents3').del()
     .then(function () {
-      return knex('residents').insert([
+      return knex('residents3').insert([
       { 
         name: "Doris",
         photo: "https://erinwritesnow.files.wordpress.com/2017/01/cute-happy-older-lady.jpg",
@@ -18,11 +18,9 @@ exports.seed = function(knex) {
         interests: "knitting, cats, card games, unsolved mysteries",
         pets: "one cat",
         living_preferences: "",
-        appointments: [{"day": "Monday", "time": "1:00AM"}, {"day": "Thursday", "time": "9:00AM"}],
         semester: "Spring 2021",
-        additonal_notes: "I need help feeding my cat, Mittens. Please don't eat peanuts around me, I am terribly allergic."
+        additional_notes: "I need help feeding my cat, Mittens. Please don't eat peanuts around me, I am terribly allergic."
       }
     ])
-    .catch(error => console.log(error))
   })
 };

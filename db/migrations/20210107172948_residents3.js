@@ -1,6 +1,6 @@
-exports.up = function(knex) {
+exports.up = function (knex) {
   return knex.schema
-  .createTable('residents', function (table) {
+  .createTable('residents3', function (table) {
     table.increments('id').primary();
     table.string('name');
     table.string('photo');
@@ -15,13 +15,12 @@ exports.up = function(knex) {
     table.string('interests');
     table.string('pets');
     table.string('living_preferences');
-    /* table.json('appointments');*/
     table.string('semester');
-    table.string('additional_notes');
+    table.string('additional_notes'); 
   })
 };
 
-exports.down = function(knex) {
+exports.down = function (knex) {
   return knex.schema
-  .dropTable('residents')
+  .dropTable('residents3')
 };
