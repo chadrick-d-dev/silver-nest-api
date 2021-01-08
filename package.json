@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/chadrick-d-dev/silver-nest-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.15",
+    "pg": "^8.5.1"
   }
 }
