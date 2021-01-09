@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
-const database = require('knex')({client: 'pg'});
+const database = require('knex')(configuration);
 
 app.set('port', process.env.PORT || 3001);
 app.locals.title = 'Silver Nest';
