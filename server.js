@@ -1,8 +1,8 @@
 const { response } = require('express');
 const express = require('express');
-// const cors = require('cors');
+const cors = require('cors');
 const app = express();
-// app.use(cors());
+app.use(cors());
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
@@ -20,8 +20,8 @@ app.listen(app.get('port'), () => {
 
 app.get('/api/v1/residents', async (request, response) => {
   try {
-    const papers = await database('residents3').select();
-    response.status(200).json(papers);
+    const residents = await database('residents3').select();
+    response.status(200).json(residents);
   } catch(error) {
     response.status(500).json({ error });
   }
