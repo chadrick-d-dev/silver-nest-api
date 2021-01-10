@@ -1,4 +1,3 @@
-
 exports.seed = function(knex) {
 
   return knex('residents3').del()
@@ -17,7 +16,7 @@ exports.seed = function(knex) {
         previous_career: "Seamstress",
         interests: "knitting, cats, card games, unsolved mysteries",
         pets: "one cat",
-        living_preferences: "",
+        living_preferences: "I would feel most comfortable sharing my home with a female student",
         semester: "Spring 2021",
         additional_notes: "I need help feeding my cat, Mittens. Please don't eat peanuts around me, I am terribly allergic."
       },
@@ -40,8 +39,8 @@ exports.seed = function(knex) {
       },
       { 
         name: "Wendy",
-        photo: "",
-        age: "",
+        photo: "https://reengage.org.uk/site/assets/files/1068/possible_home_page.750x0.jpg",
+        age: "85",
         height: "5'5\"",
         weight: "125 lbs",
         pcp: "Dr. Green",
@@ -49,11 +48,11 @@ exports.seed = function(knex) {
         help_with_medications: "yes",
         other_impairments: "multiple sclerosis",
         previous_career: "Elementary School Teacher",
-        interests: "",
+        interests: "Ping-pong, walks around the block, and chinese chess",
         pets: "dog",
-        living_preferences: "",
+        living_preferences: "I'm an early riser, and try to get most of my errands done first thing",
         semester: "Spring 2021",
-        additional_notes: ""
+        additional_notes: "It's important for me to keep cooking -- it's one of my favorite hobbies -- however, I sometimes forget I have stuff on the stove"
       },
       { 
         name: "Sylvia",
@@ -85,9 +84,9 @@ exports.seed = function(knex) {
         previous_career: "Actress, Comedian",
         interests: "Morris Animal Foundation, musicals, singing, fiction novels",
         pets: "1 cat, 2 dogs",
-        living_preferences: "",
+        living_preferences: "I join my family on various outtings, and would like to have someone who will be arround to help feed my cat and dogs when I'm out.",
         semester: "Summer 2021",
-        additional_notes: ""
+        additional_notes: "I could use someone who is comfortable changing oxygen tanks when I run out."
       },
       { 
         name: "Alan",
@@ -108,7 +107,7 @@ exports.seed = function(knex) {
       },
       { 
         name: "Jerry",
-        photo: "",
+        photo: "https://silverlakecenter.com/wp-content/uploads/sites/63/2015/05/silver-lake-center-people-weve-touched.jpg",
         age: "80",
         height: "6'",
         weight: "220 lbs",
@@ -119,9 +118,60 @@ exports.seed = function(knex) {
         previous_career: "Restaurant owner",
         interests: "cooking, football, baseball, card games",
         pets: "none",
-        living_preferences: "",
+        living_preferences: "I would like to have someone stay in my home who can help me with getting more exercise.",
         semester: "Fall 2021",
         additional_notes: "I am the world's best chef. I just need help carrying in the groceries!"
+      },
+      { 
+        name: "Jack",
+        photo: "https://www.ohioliving.org/uploads/communities/Ohio%20Living%20Westminster-Thurber/old-people-watching-drinks-1024x690.jpg",
+        age: "90",
+        height: "5' 11\"",
+        weight: "160 lbs",
+        pcp: "Dr. Fitzsimons",
+        ambulatory: "yes",
+        help_with_medications: "yes",
+        other_impairments: "Sight, hearing, and balance",
+        previous_career: "Electrician",
+        interests: "Puzzling, word search, trivia, and gardening",
+        pets: "no pets",
+        living_preferences: "Perfer to have someone who can help with technical issues on my computer, and assist me with keeping plants watered.",
+        semester: "Spring",
+        additional_notes: "I like to meet friends for coffee on Saturday mornings, and would appreciate someone who I can rely on to get me there."
+      },
+      { 
+        name: "Bill & Wanda",
+        photo: "https://jointflex.com/wp-content/uploads/2017/12/elderly-couple-with-arthritis-on-a-run-600x400.jpg",
+        age: "72 and 78",
+        height: "6' and 5' 8\"",
+        weight: "200 lbs and 150 lbs",
+        pcp: "Dr. Marler",
+        ambulatory: "no",
+        help_with_medications: "yes",
+        other_impairments: "Sight, and hearing",
+        previous_career: "Engeneer, and Lawer",
+        interests: "Cardio, weightlifting, trivia, and football",
+        pets: "no pets",
+        living_preferences: "We try to maintain an active lifestyle, and would like someone who is comfortable arround weights.",
+        semester: "Summer",
+        additional_notes: "We both need some assistance in keeping up with meds, and help with technical issues."
+      },
+      { 
+        name: "Dorthy",
+        photo: "https://i.pinimg.com/originals/d6/1d/3c/d61d3c9032a937e96e72e0429d8bcd5e.jpg",
+        age: "96",
+        height: "5' 6\"",
+        weight: "120 lbs",
+        pcp: "Dr. O'hera",
+        ambulatory: "yes",
+        help_with_medications: "yes",
+        other_impairments: "Sight, hearing, dementia, and frailty",
+        previous_career: "Hospital Administrator",
+        interests: "BINGO, board games, crochet, and watching movies",
+        pets: "none",
+        living_preferences: "I'd like to have someone here, who can be arround more often than not, as I often need help with mobility around the house.",
+        semester: "Fall",
+        additional_notes: "I experience sundowning in the evenings, and would like to have someone who doesn't mind being close by who is gentle and reashuring."
       }
     ])
   })
