@@ -23,3 +23,18 @@ app.get('/api/v1/residents', async (request, response) => {
     response.status(500).json({ error });
   }
 });
+
+app.get('/api/v1/residents/:semester', async (request, response) => {
+  try {
+    const residents = await database('residents3').where('semester', request.params.semester).select();
+    if (residents.length) {
+      response.status(200).json(residents);
+    } else {
+      response.status(404).json({
+        error: `Could not find residents available during the semester of ${request.params.semester}`
+      });
+    }
+  } catch (error) {
+    response.status(500).json({ error });
+  }
+});
