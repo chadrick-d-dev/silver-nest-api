@@ -1,12 +1,14 @@
 const { response } = require('express');
 const express = require('express');
-const cors = require('cors');
 const app = express();
-app.use(cors());
+const cors = require('cors');
+
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
 
+app.use(cors());
+app.use(express.json())
 app.set('port', process.env.PORT || 3001);
 
 app.locals.title = 'Silver Nest';
@@ -26,7 +28,9 @@ app.get('/api/v1/residents', async (request, response) => {
 
 app.get('/api/v1/residents/:semester', async (request, response) => {
   try {
-    const residents = await database('residents3').where('semester', request.params.semester).select();
+    const residents = await database('residents3')
+      .where('semester', request.params.semester)
+      .select();
     if (residents.length) {
       response.status(200).json(residents);
     } else {
