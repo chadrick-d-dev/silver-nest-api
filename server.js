@@ -1,4 +1,4 @@
-// const { response } = require('express');
+const { response } = require('express');
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -36,23 +36,6 @@ app.get('/api/v1/residents/:semester', async (request, response) => {
     } else {
       response.status(404).json({
         error: `Could not find residents available during the semester of ${request.params.semester}`
-      });
-    }
-  } catch (error) {
-    response.status(500).json({ error });
-  }
-});
-
-app.get('/api/v1/residents/:id', async (request, response) => {
-  try {
-    const resident = await database('residents3')
-      .where('id', `${request.params.id}`)
-      .select();
-    if (resident.id) {
-      response.status(200).json(resident);
-    } else {
-      response.status(404).json({
-        error: `Could not find resident with id of ${request.params.id}`
       });
     }
   } catch (error) {
