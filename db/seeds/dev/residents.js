@@ -207,23 +207,6 @@ exports.seed = function(knex) {
         semester: "Fall-2021",
         additional_notes: "Believe it or not, Apple still requests my consult on current projects! Sometimes I need help adjusting my accessibility settings on my monitors."
       },
-      {
-        name: "Masako",
-        photo: "https://content.fortune.com/wp-content/uploads/2017/06/masako-1.jpg",
-        age: "84",
-        height: "5' 3\"",
-        weight: "100 lbs",
-        pcp: "Dr. Bueller",
-        ambulatory: "Yes",
-        help_with_medications: "No",
-        other_impairments: "Vision, Hearing",
-        previous_career: "Software Developer",
-        interests: "Hobby Programming, Design, and Keeping up with News & Trends",
-        pets: "None",
-        living_preferences: "I prefer to live with someone who is clean, tidy, and has some basic tech know-how.",
-        semester: "Fall-2021",
-        additional_notes: "Believe it or not, Apple still requests my consult on current projects! Sometimes I need help adjusting my accessibility settings on my monitors."
-      }
     ])
   })
 };
